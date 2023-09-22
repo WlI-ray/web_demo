@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>影迷注册</title>
+</head>
+<body>
+<header></header>
+<nav></nav>
+<!--表单内容区域-->
+<section>
+    <form action="p5_ok.html" onsubmit="return check();" method="post" name="form1" autocomplete="on">
+        <table border="1">
+            <tr>
+                <td class="col1">昵称</td>
+                <td class="col2"><input type="text" placeholder="请输入昵称" required="required"/></td>
+            </tr>
+            <tr>
+                <td class="col1">Email</td>
+                <td><input name="email" type="email" placeholder="请输入邮箱"/></td>
+            </tr>
+            <tr>
+                <td class="col1">性别</td>
+                <td style="line-height:30px">
+                    <label for="boy"><input type="radio" name="sex" id="boy" checked="checked"> 男</label>　
+                    <label for="girl"><input type="radio" name="sex" id="girl"> 女</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">年龄</td>
+                <td><input type="number" name="age" min="0" max="150" placeholder="20"/></td>
+            </tr>
+            <tr>
+                <td class="col1">截图</td>
+                <td><input type="file" name="file" style="height:26px;line-height:26px;"></td>
+            </tr>
+            <tr>
+                <td class="col1">看电影时间</td>
+                <td>
+                    <select name="type">
+                        <option value="0">请选择时间</option>
+                        <option value="ts">很少</option>
+                        <option value="jy">说不准</option>
+                        <option value="qt">经常</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">电影类型</td>
+                <td>
+
+                    <input type="checkbox" name="jr">爱情文艺&nbsp;
+                    <input type="checkbox" name="gwy">科幻&nbsp;
+                    <input type="checkbox" name="yl">恐怖&nbsp;
+                    <input type="checkbox" name="xw">魔幻&nbsp;
+                    <input type="checkbox" name="yl">战争&nbsp;
+                    <input type="checkbox" name="qt">喜剧
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">你最喜欢</td>
+                <td>
+                    <input type="checkbox" name="it">IT&nbsp;
+                    <input type="checkbox" name="jr">阿凡达&nbsp;
+                    <input type="checkbox" name="gwy">夺命深渊&nbsp;
+                    <input type="checkbox" name="jk">深海异形&nbsp;
+                    <input type="checkbox" name="yl">深渊幽灵&nbsp;
+                    <input type="checkbox" name="xw">泰坦尼克&nbsp;
+                    <input type="checkbox" name="jk">真实的谎言&nbsp;
+                    <input type="checkbox" name="yl">异形&nbsp;
+                    <input type="checkbox" name="xw">食人鱼&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">最爱影片打分</td>
+                <td>
+                    <input type="range" name="points" min="1" max="10"/> 最低0分，最高10分
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">你希望影迷会召开的时间</td>
+                <td>
+                    <input type="date" name="shijian"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="col1">
+                    留言
+                </td>
+                <td>
+<textarea name="ly" cols="50" rows="5" style="font-size:14px;color:#aaa;"
+          placeholder="请在此输入您的留言！"></textarea>
+                </td>
+            </tr>
+            <tr class="tr">
+                <td align="center" style="padding-top:20px;"><input type="submit" value="提交" style="height:30px;"></td>
+                <td style="padding-top:20px;"><input type="reset" value="重置" style="height:30px;"></td>
+            </tr>
+        </table>
+    </form>
+</section>
+
+
+<div id="content">
+
+
+</div>
+<!--底部信息-->
+<footer>
+    <address>
+        &copy;contributed by information science and engineering，<a href="http://www.ujn.edu.cn">university of jinan</a><sup>[1]</sup>
+    </address>
+</footer>
+</body>
+
+</html>

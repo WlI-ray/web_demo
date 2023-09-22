@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-ch">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    #video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+</style>
+<script>
+    window.addEventListener("DOMContentLoaded", function() {
+        var video = document.getElementById("video-background");
+
+        if (typeof video.loop == "boolean") {
+            video.loop = true;
+        } else {
+            video.addEventListener("ended", function() {
+                this.currentTime = 0;
+                this.play();
+            }, false);
+        }
+
+        video.play();
+    });
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>作业</title>
+</head>
+<body>
+<video id="video-background" autoplay muted>
+    <source src="./videos/Titanic.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<div id="menu" style="background-color:#FFD70066;padding-left: 10px;height:100%;width:20%;position: absolute">
+    <h1><a href="index.jsp">首页</a></h1>
+    <h2><a href="p1_webpageCreate.html">项目一 网页创建</a></h2>
+    <h2><a href="p2_introduction-Cameron1.html">项目二 个人简介1</a></h2>
+    <h2><a href="p3_introduction-Cameron2.html">项目三 个人简介2</a></h2>
+    <h2><a href="p4_introduction-Cameron3.html">项目四 个人简介3</a></h2>
+    <h2><a href="p5_h5form.html">项目五 HTML5表单应用</a></h2>
+    <h2><a href="p6_growthStory1.html">项目六 成长故事1</a></h2>
+    <h2><a href="p7_growthStory2.html">项目七 成长故事2</a></h2>
+    <h2><a href="p8_representativeWorks-Titanic.html">项目八 代表作品-泰坦尼克号1</a></h2>
+    <h2><a href="p9_introduction-Cameron4.html">项目九 个人简介4</a></h2>
+    <h2><a href="p10_index.html">项目十 首页</a></h2>
+
+    <h2><a href="#">项目十一 成长故事3影迷注册</a></h2>
+    <ul>
+        <li><h3><a href="p11_fanRegister.html">p11_fanRegister.html</a></h3></li>
+        <li><h3><a href="p11_growthStory3.html">p11_growthStory3.html</a></h3></li>
+    </ul>
+
+    <h2><a href="p13_representativeWorks-collections.html">项目十三 代表作品-作品集锦</a></h2>
+    <h2><a href="p14_fanRegister-search.html">项目十四 影迷注册-问卷调查</a></h2>
+    <h2><a href="p15_index.html">项目十五 网站整合</a></h2></div>
+
+
+
+</body>
+</html>
